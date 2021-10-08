@@ -2,10 +2,21 @@ from django.db import models
 
 
 # Create your models here.
-class Editor(models.Model):
-    first_name = models.CharField(max_length =30)
-    last_name = models.CharField(max_length =30 )
-    email = models.EmailField()
+class Category(models.Model):
+  
+    def __str__(self):
+        return self
+    
+    
+class Location(models.Model):
+    name = models.CharField(max_length=30)
 
     def __str__(self):
-        return self.first_name
+        return self.name
+
+class Image(models.Model):
+    image = models.image()
+    imageName = models.TextField()
+    descripion = models.TextField(image)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    location = models.ManyToManyField(Location) 
