@@ -15,8 +15,7 @@ class Location(models.Model):
         return self.name
 
 class Image(models.Model):
-    image = models.image()
-    imageName = models.TextField()
-    descripion = models.TextField(image)
+    # gallery_image = models.ImageField(upload_to = 'gallery', default = None)
+    descripion = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     location = models.ManyToManyField(Location) 
