@@ -14,3 +14,9 @@ class Location(models.Model):
     def __str__(self):
         return self.name
 
+class Image(models.Model):
+    image = models.image()
+    imageName = models.TextField()
+    descripion = models.TextField(image)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    location = models.ManyToManyField(Location) 
