@@ -37,16 +37,7 @@ def get_category(request):
     category = Category.object.all()
 
     return render(request,'welcome.html', {"category":category})
-
-
-
-
-
-
-
-
-
-    
+ 
 
 def search_results(request):
     if 'photo' in request.GET and request.GET["photo"]:
