@@ -7,12 +7,13 @@ from django.core.checks import messages
 
 # Create your views here.
 def welcome(request):
+    categories = Category.objects.all()
     try:
         photos = Photo.objects.all()
     except DoesNotExist:
         raise Http404()
-    category = Category.objects.all()
-    return render(request,'welcome.html',{'photos':photos} ,{'category':category})
+    
+    return render(request,'welcome.html',{'photos':photos,'categories':categories})
 
 def gallery_of_day(request):
     date = dt.date.today()
@@ -38,11 +39,8 @@ def get_category(request):
 
     return render(request,'welcome.html', {"category":category})
  
-
-
-
 def search_results(request):
-    if 'photo' in request.GET and request.GET["photo"]:
+    if 'photo' in request.GET and request.GET["photos"]:
         search_term = request.GET.get("photo")
         searched_photos = Photo.search_by_category(search_term)
         message = f"{search_term}"
@@ -50,4 +48,4 @@ def search_results(request):
         return render(request, 'search.html',{"message":message,"photos": searched_photos})
     else:
         message = "You haven't searched for any term"
-        return render(request, 'all-news/search.html',{"message":message})
+        return render(request, 'search.html',{"message":message})
