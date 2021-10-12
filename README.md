@@ -64,14 +64,14 @@ nyagahisaac@gmail.com
 # About
 
 This is an application that enables users to views pictures as well as share links to thier favourite pictures. The user can also view images according to category and location taken.
-[]
-Resources
-Readme
-Releases
-No releases published
-Packages
-No packages published
-Languages
+* [https://heistinggallery.herokuapp.com/]
+* Resources
+* Readme
+* Releases
+* No releases published
+* Packages
+* No packages published
+* Languages
 
 * Python 93.5%
 * JavaScript 3.9%
