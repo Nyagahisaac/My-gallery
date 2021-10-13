@@ -1,7 +1,7 @@
 # My-gallery
 ~ My Gallery App ~ 
-
-* @A[https://github.com/nyagahisaac/My-gallery.git] This project was generated with Python version 3.8.0
+* Live Link: [https://heistinggallery.herokuapp.com/]
+* Github:  [https://github.com/nyagahisaac/My-gallery.git] This project was generated with Python version 3.8.0
 # Author:
 
 * Nyagah Isaac
