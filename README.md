@@ -10,6 +10,8 @@
 This is an application that enables users to views pictures as well as share links to thier favourite pictures.
 User Stories
 
+     <img src="file:///home/isaac/Screenshot%20from%202021-10-13%2009-17-45.png![image](https://user-images.githubusercontent.com/86708463/137077858-7a5b4744-9cdc-4141-9c7e-7e86dd78c2a7.png)
+" alt="">
 *The user can view images according to category and also location *The user can search for an image with its name.
 # SetUp / Installation Requirements
 ## Prerequisites
