@@ -1,6 +1,6 @@
 # My-gallery
 ~ My Gallery App ~ 
-* Live Link: [https://heistinggallery.herokuapp.com/]
+* Live Link: (https://heistinggallery.herokuapp.com/)
 * Github:  [https://github.com/nyagahisaac/My-gallery.git] This project was generated with Python version 3.8.0
 # Author:
 
